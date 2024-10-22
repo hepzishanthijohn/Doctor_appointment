@@ -1,0 +1,73 @@
+/* src/pages/OnlineConsultation.css */
+.online-consultation-container {
+    display: flex;
+    flex-direction: column;
+    padding: 110px;
+    text-align: center;
+}
+
+.doctor-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; /* Center the cards */
+}
+
+.doctor-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px;
+    background-color: #1f1469;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Ensure button takes full width */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change to darker shade on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .online-consultation-container {
+        padding: 50px; /* Reduce padding on smaller screens */
+    }
+
+    button {
+        padding: 12px; /* Increase padding for easier clicking */
+    }
+
+    .doctor-list {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards */
+    }
+}
+
+@media (max-width: 500px) {
+    .online-consultation-container {
+        padding: 20px; /* Further reduce padding for mobile */
+    }
+
+    button {
+        padding: 10px; /* Standard padding for buttons */
+    }
+
+    .doctor-card {
+        max-width: 100%; /* Ensure cards take full width on mobile */
+    }
+}

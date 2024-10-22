@@ -1,0 +1,12 @@
+*{
+  font-family: Arial,  sans-serif;
+}
+
+button{
+  background-color: #1f1469;
+}
+
+.header{
+  background-color: #eeedf5;
+  padding: 30px;
+}

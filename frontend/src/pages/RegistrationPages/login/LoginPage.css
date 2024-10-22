@@ -1,0 +1,99 @@
+/* LoginPage.css */
+body {
+    background-color: #f4f4f4; /* Light background color for contrast */
+    font-family: Arial, sans-serif; /* Clean font for the page */
+}
+
+.login-container {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add some padding */
+}
+
+.text-content {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space between text and form */
+}
+
+#doc-image {
+    width: 120px; /* Set a width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+h4 {
+    color: #007bff; /* Brand color for the header */
+    font-weight: bold; /* Bold header */
+}
+
+h2 {
+    margin: 10px 0; /* Margin for heading */
+}
+
+p {
+    margin: 0; /* Reset margin */
+    color: #555; /* Gray color for text */
+}
+
+form {
+    background: white; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners */
+   
+    width: 100%; /* Full width for the form */
+    max-width: 400px; /* Maximum width for the form */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+}
+
+input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+#loginbtn {
+    background-color: #1f149d; /* Button color */
+    color: white; /* White text on button */
+    padding: 10px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 14px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    width: 100%; /* Full width for button */
+    font-size: 16px; /* Font size for button */
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.error {
+    color: red; /* Red color for error messages */
+    margin-top: 10px; /* Space above error messages */
+}
+
+.login-link {
+    color: #007bff; /* Link color */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.login-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

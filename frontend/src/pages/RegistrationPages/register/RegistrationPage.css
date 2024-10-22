@@ -1,0 +1,54 @@
+/* src/Registration.css */
+.registration-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f1469;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f1469;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+.login-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-link:hover {
+    text-decoration: none;
+}
