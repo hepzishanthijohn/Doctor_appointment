@@ -2,7 +2,7 @@ import React from 'react';
 import './Carousel.css';
 import { useNavigate } from 'react-router-dom';
 import ScheduleImage from '../../assets/images/scheduleImage.avif';
-import smartCheckup from '../../assets/images/smtCheck.webp';
+import smartCheckup from '../../assets/images/smtcheck.webp';
 import tablet from '../../assets/images/tablet.jpg';
 
 const Carousel = () => {
