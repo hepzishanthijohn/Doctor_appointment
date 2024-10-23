@@ -25,7 +25,7 @@ const OnlineConsultation = () => {
                         <h3>{doctor.name}</h3>
                         <p>Specialty: {doctor.specialty}</p>
                         <p>Contact: {doctor.contact}</p>
-                        <Link to={`/booking/${doctor.id}`}>
+                        <Link style={{backgroundColor: "#1f1469"}} to={`/booking/${doctor.id}`}>
                             <button>Book Appointment</button>
                         </Link>
                     </div>

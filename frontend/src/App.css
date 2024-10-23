@@ -5,6 +5,9 @@
 button{
   background-color: #1f1469;
 }
+button:hover{
+  background-color: #2b2077;
+}
 
 .header{
   background-color: #eeedf5;

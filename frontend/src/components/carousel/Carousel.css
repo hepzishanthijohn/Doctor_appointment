@@ -1,63 +1,121 @@
-.carouselContainer {
-    max-width: 100%; /* Full width */
-    overflow: hidden; /* Hide overflow */
-}
-
-.carousel-inner {
+.carousel {
     position: relative;
-}
-
-.banner-item {
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    background-color: #1f1469; /* Set background color */
+    padding: 20px; /* Optional padding */
+  }
+  
+  .carousel-slide {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content */
-    justify-content: center; /* Center vertically */
-    color: #fff; /* White text */
+    align-items: center;
+    width: 80%; /* Adjust as needed */
+  }
+  
+  .carousel img {
+    width: 60%; /* Full width of the carousel */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensures images cover the area */
+    border-radius: 11px; /* Rounded corners */
+  }
+  
+  .textContent {
+    color: white; /* Text color */
     text-align: center;
-    position: relative;
-}
-
-.carousel-image {
-    width: 100%; /* Full width */
-    height: 60vh; /* Set a fixed height */
-    object-fit: cover; /* Cover the space while maintaining aspect ratio */
-    filter: brightness(0.7); /* Darken the image for text contrast */
-}
-
-.textContent {
-    position: absolute; /* Positioning for overlay */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow for better readability */
-}
-
-h3 {
-    font-size: 1.8rem; /* Increase heading size */
-    margin-bottom: 10px; /* Spacing below heading */
-}
-
-p {
-    font-size: 1.1rem; /* Adjust paragraph size */
-    margin-bottom: 15px; /* Spacing below paragraph */
-}
-
-button {
-    padding: 10px 20px; /* Padding for button */
-    background-color: #1f1469; /* Button color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    color: #fff; /* White text */
-    cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker button color on hover */
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    border-radius: 50%; /* Circular buttons */
-}
+    margin-top: 10px; /* Space between image and text */
+  }
+  
+  .textContent h3 {
+    margin: 10px 0; /* Space for the heading */
+  }
+  
+  .textContent p {
+    margin-bottom: 20px; /* Space for the description */
+  }
+  
+  .btn-skip {
+    padding: 10px 20px;
+    background-color: #fff; /* Button color */
+    color: #1f1469; /* Button text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-skip:hover {
+    background-color: #e0e0e0; /* Button hover effect */
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Space between the carousel and dots */
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px; /* Space between dots */
+    color: white; /* Dot color */
+    cursor: pointer; /* Cursor changes on hover */
+    transition: color 0.3s; /* Smooth transition */
+  }
+  
+  .dot.active {
+    color: #1f1469; /* Active dot color */
+  }
+  
+  /* Media Query for Tablets and Small Desktops */
+  @media (max-width: 1024px) {
+    .carousel img {
+      width: 80%; /* Wider images for smaller screens */
+      height: 300px; /* Reduced height */
+    }
+  
+    .textContent h3 {
+      font-size: 1.5rem; /* Adjust heading size */
+    }
+  
+    .textContent p {
+      font-size: 1rem; /* Adjust paragraph size */
+    }
+  
+    .btn-skip {
+      padding: 8px 16px; /* Smaller button */
+    }
+  
+    .dots {
+      margin-top: 5px; /* Less space for dots */
+    }
+  }
+  
+  /* Media Query for Mobile Phones */
+  @media (max-width: 600px) {
+    .carousel img {
+      width: 90%; /* Full width for mobile */
+      height: 200px; /* Further reduced height */
+    }
+  
+    .textContent h3 {
+      font-size: 1.2rem; /* Smaller heading size */
+    }
+  
+    .textContent p {
+      font-size: 0.9rem; /* Smaller paragraph size */
+    }
+  
+    .btn-skip {
+      padding: 6px 12px; /* Smaller button */
+    }
+  
+    .dot {
+      height: 8px; /* Smaller dots */
+      width: 8px; /* Smaller dots */
+    }
+  }
+  

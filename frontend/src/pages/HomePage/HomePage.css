@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: #1f1469; /* Darker color on hover */
 }
 @media (max-width: 500px) {
     .card-container {
